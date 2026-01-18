@@ -5,5 +5,5 @@
     "GEmail": "wines0@gmail.com",
     "GPassword": "July22ND.2006!",
     
-    "dependancies": "./requirements.txt"
+    "dependencies": "./requirements.txt"
 }
