@@ -1,12 +1,13 @@
 from venv import create
 from os.path import join, expanduser
-import subprocess
+import subprocess, json
 
-# Define the directory for the new virtual environment
-venv_dir = join(expanduser("~"), "my-venv")
+# loading the config file
+with open("./setup/config.json", 'r') as config:
+    config = config.load()
 
 # Create the virtual environment with pip
-create(venv_dir, with_pip=True)
+create(config["venv_dir"], with_pip=True)
 
-# Install packages from requirements.txt (if needed)
-subprocess.run([join(venv_dir, "bin", "pip"), "install", "-r", "requirements.txt"], cwd=venv_dir)   
+# Install packages from requirements.txt
+subprocess.run([join(config["venv_dir"], "bin", "pip"), "install", "-r", config["dependancies"]], cwd=config["venv_dir"])   

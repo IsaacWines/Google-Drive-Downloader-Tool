@@ -2,11 +2,8 @@
     "version": 1.0,
     "venv_name": "GDDownloader",
     "venv_dir": "./.venv",
-    "GEmail": "wines0@gmail.com",
-    "GPassword": "July22ND.2006!",
+    "GEmail": "example@gmail.com",
+    "GPassword": "1234abcd",
     
-    "dependancies": "./requirements.txt"
-
-
-
+    "dependencies": "./requirements.txt"
 }
