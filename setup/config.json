@@ -3,7 +3,5 @@
     "venv_name": "GDDownloader",
     "venv_dir": "./.venv",
     "GEmail": "wines0@gmail.com",
-    "GPassword": "July22ND.2006!",
-    
-    "dependencies": "./requirements.txt"
+    "GPassword": "July22ND.2006!"
 }
